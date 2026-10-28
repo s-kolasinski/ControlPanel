@@ -25,6 +25,7 @@ ASYNC_SLEEP_TIME = 0.001 #[s]
 
 
 async def receive_frames():
+    """asynchronous function receiving registered frames"""
     cm.connect(TcpSettings("127.0.0.1", 3000))
     
     while True:
